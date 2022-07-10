@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="intro.css" />
+    <title>Goal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="intro.html">홈</a></li>
+          <li><a href="goal.html">목표 및 관심분야</a></li>
+          <li><a href="tmi.html">TMI</a></li>
+        </ul>
+        <input
+          id="theme"
+          type="button"
+          value="Pink Theme"
+          onclick="
+        if (this.value == 'Pink Theme') {
+          document.querySelector('h1').style.color = '#ff8b8b'
+          let liEle = document.querySelectorAll('li');
+          for (let i = 0; i < liEle.length; i++) {
+            liEle[i].style.backgroundColor = '#ff8b8b';
+          }
+          this.value = 'Orange Theme';
+        } else {
+          document.querySelector('h1').style.color = '#ff9763'
+          let liEle = document.querySelectorAll('li');
+          for (let i = 0; i < liEle.length; i++) {
+            liEle[i].style.backgroundColor = '#ff9763';
+          }
+          this.value = 'Pink Theme';
+        }
+        "
+        />
+      </nav>
+      <p>
+        *제 노트북사이즈에 맞춘거라 크기가 깨질 수 있습니다. 15인치 노트북 화면
+        추천 드립니다..
+      </p>
+      <h1>My Goal & Interest</h1>
+    </header>
+
+    <main>
+      <div id="goalMain">
+        <article id="five">
+          <img class="goalImg" src="no idea.jpg" alt="잘 모르겠는 이미지" />
+          <h3 class="goalH3">관심직무</h3>
+          <strong>아직 잘 모르겠어요...</strong>
+          <br />
+          이것도 저것도 다 재밌어 보여서 하나를 선택하기가 힘드네요 ㅜㅜ 트랙
+          전에는 파이썬을 공부해서 막연히 데이터나 백엔드 쪽을 생각했는데 또
+          공부해보니 프론트엔드도 재밌는거 있죠? 큰일이다 큰일이야
+        </article>
+        <article id="six">
+          <img class="goalImg" src="appweb.jpg" alt="IT적인 이미지" />
+          <h3 class="goalH3">관심분야</h3>
+          <strong>웹 개발, 앱 개발, 게임 개발</strong>
+          <br />
+          지금 웹 개발을 배우다보니 웹 재밌구..
+          <br />
+          평소에 앱을 많이 사용하니까 앱도 만들고 싶구..
+          <br />
+          게임을 좋아해서 게임도 만들고 싶구..
+          <br />
+          꿈 많고 하고픈거 많은 26짤
+        </article>
+        <article id="seven">
+          <img
+            src="interest language.jpg"
+            class="goalImg"
+            alt="언어들 이미지"
+          />
+          <h3 class="goalH3">관심기술</h3>
+          <strong>JavaScript, Python, 유니티</strong>
+          <br />
+          JS가 여러 곳에서 활용된다고 해서 배우고 싶어요!
+          <br />
+          Python은 간단명료하고 활용범위가 넓어서 좋아요!
+          <br />
+          유니티로 언젠가 게임을 만들어 보고 싶어요!
+        </article>
+        <article id="eight">
+          <img src="myfuture.jpg" class="goalImg" alt="꿈 많은 이미지" />
+          <h3 class="goalH3">목표</h3>
+          <strong>머릿속에 떠오르는 것들을 직접 만들고 싶어요.</strong>
+          <br />
+          일상에서 웹이나 앱을 쓰다가 '이거 있으면 좋겠는데?' 했던 것들을 직접
+          만들고 싶어요. 또 먼훗날 <br />
+          인디게임 하나 만드는게 버킷리스트..! 상상을 컴퓨터언어로 실현할 수
+          있다는게 얼마나 매력적인지!
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        이 문서의 저작권은 채은빈에게 있습니다. <br />
+        이 페이지의 이미지는 unsplash에서 가져왔습니다.<br />
+        made by eunbin ✏️
+      </div>
+    </footer>
+  </body>
+</html>
